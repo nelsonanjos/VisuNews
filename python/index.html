@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            
+
+            function logar(){
+                var user = document.getElementById("user").value;
+                var pass = document.getElementById("pass").value;
+                
+                if(user == "admin" && pass == "admin"){
+                    window.location.href = "http://localhost:3000";
+                } else {
+                    document.getElementById("result").innerHTML = "";
+                    document.getElementById("result").innerHTML += "Senha incorreta! Tente novamente...";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>LOGIN </h1>
+        Usuario: <input id="user" type="text">
+        Senha: <input id="pass" type="text">
+        <button type="submit" onclick="logar()">OK</button>
+        <div id="result"></div>    
+
+        
+
+    </body>
+
+</html>
