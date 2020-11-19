@@ -41,7 +41,7 @@ const Time = () => {
     ];
 
     return (
-        <>
+        <div>
             <p id="week-day">{weekDay[time.getDay()]}</p>
             <p id="date">{
                 `
@@ -58,7 +58,7 @@ const Time = () => {
                     ${seconds}
                 `
             }</p>
-        </>
+        </div>
     )
 };
 

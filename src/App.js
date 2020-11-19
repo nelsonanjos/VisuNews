@@ -31,7 +31,8 @@ function App() {
     text: ['Comer frutas no café da manhã tras um ânimo melhor',
     'além disso diminui os riscos de infarto',]
   };
-  
+
+
   const listNews = [news1, news2, news3];
   const [head, setHead] = useState(listNews[0].head);
   const [image, setImage] = useState(listNews[0].img);
@@ -50,7 +51,7 @@ function App() {
       setImage(listNews[positionNews].img);
       setTitle(listNews[positionNews].title);
       setText(listNews[positionNews].text);
-    }, timeSlide(0.1));
+    }, 5000);
   }
   handleSlide();
 

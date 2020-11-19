@@ -8,7 +8,7 @@ const News = props => {
     } = props;
 
     return (
-        <>
+        <div>
             <div id="news-title">
                 <h1>{title}</h1>
             </div>
@@ -18,7 +18,7 @@ const News = props => {
                     <p key={i}>{t}</p>
                 ))}
             </div>
-        </>
+        </div>
     )
 };
 

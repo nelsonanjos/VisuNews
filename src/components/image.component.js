@@ -8,11 +8,11 @@ const Image = props => {
     } = props;
 
     return (
-        <>
+        <div>
             <article id="img-news">
                 <img src={src} alt={alt} />
             </article>
-        </>
+        </div>
     )
 };
 
